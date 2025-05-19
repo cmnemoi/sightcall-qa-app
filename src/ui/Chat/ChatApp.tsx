@@ -5,7 +5,6 @@ import styles from "./ChatApp.module.css";
 import type { Source } from "./SourcesAccordion";
 import { ChatService } from "../../domain/chat/ChatService";
 import { ChatApiAdapter } from "../../infrastructure/api/ChatApiAdapter";
-import { FakeChatAdapter } from "../../tests/chat/FakeChatAdapter";
 
 export type ChatMessage = {
   sender: "user" | "bot";
@@ -15,7 +14,6 @@ export type ChatMessage = {
 
 const chatServiceRef = {
   current: new ChatService(new ChatApiAdapter()),
-  // current: new ChatService(new FakeChatAdapter()),
 };
 
 interface ExampleQuestionsProps {
