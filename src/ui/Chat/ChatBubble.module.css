@@ -1,0 +1,64 @@
+.chatBubble {
+  max-width: 80%;
+  padding: 18px 26px;
+  border-radius: 22px;
+  font-size: 1rem;
+  line-height: 1.6;
+  box-shadow:
+    0 4px 18px rgba(125, 62, 246, 0.08),
+    0 1px 8px rgba(0, 0, 0, 0.06);
+  word-break: break-word;
+  position: relative;
+  margin-bottom: 16px;
+  font-family: "Inter", "Montserrat", "Segoe UI", Arial, sans-serif;
+  transition: box-shadow 0.2s;
+}
+
+.bot {
+  background: #fff;
+  color: #18192b;
+  align-self: flex-start;
+  border-bottom-left-radius: 6px;
+  box-shadow:
+    0 4px 18px rgba(125, 62, 246, 0.13),
+    0 1px 8px rgba(0, 0, 0, 0.06);
+}
+.bot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  width: 44px;
+  height: 44px;
+  background: radial-gradient(
+    circle,
+    rgba(125, 62, 246, 0.18) 0%,
+    rgba(246, 244, 251, 0) 75%
+  );
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+.bot > * {
+  position: relative;
+  z-index: 1;
+}
+
+.user {
+  background: #7d3ef6;
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 6px;
+  box-shadow:
+    0 4px 18px rgba(125, 62, 246, 0.1),
+    0 1px 8px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 600px) {
+  .chatBubble {
+    max-width: 95%;
+    font-size: 0.97rem;
+    padding: 12px 12px;
+    margin-bottom: 10px;
+  }
+}

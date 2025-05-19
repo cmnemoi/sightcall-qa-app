@@ -1,0 +1,18 @@
+.chatMessageList {
+  flex: 1;
+  padding: 32px 22px 18px 22px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #f6f4fb;
+  scroll-behavior: smooth;
+  font-family: "Inter", "Montserrat", "Segoe UI", Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .chatMessageList {
+    padding: 16px 4px 8px 4px;
+    gap: 8px;
+  }
+}
