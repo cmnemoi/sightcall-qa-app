@@ -2,6 +2,10 @@
 
 A web application for interacting with a RAG-based chatbot that answers questions about SightCall from their website.
 
+
+[![Continuous Integration](https://github.com/cmnemoi/sightcall-qa-app/actions/workflows/ci.yml/badge.svg)](https://github.com/cmnemoi/sightcall-qa-app/actions/workflows/ci.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/49ec8f74-e14b-4a9d-ac0e-a3947e403301/deploy-status)](https://sightcall-qa.netlify.app/)
+
 Stack:
 
 - [React 19](https://react.dev/) for the frontend framework
