@@ -2,9 +2,10 @@
 
 A web application for interacting with a RAG-based chatbot that answers questions about SightCall from their website.
 
-
-[![Continuous Integration](https://github.com/cmnemoi/sightcall-qa-app/actions/workflows/ci.yml/badge.svg)](https://github.com/cmnemoi/sightcall-qa-app/actions/workflows/ci.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/49ec8f74-e14b-4a9d-ac0e-a3947e403301/deploy-status)](https://sightcall-qa.netlify.app/)
+[![Continuous Integration](https://github.com/cmnemoi/sightcall-qa-app/actions/workflows/ci.yaml/badge.svg)](https://github.com/cmnemoi/sightcall-qa-app/actions/workflows/ci.yaml)
+[![Continuous Delivery](https://github.com/cmnemoi/sightcall-qa-app/actions/workflows/cd.yaml/badge.svg)](https://github.com/cmnemoi/sightcall-qa-app/actions/workflows/cd.yaml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/19d09da9-f02f-453f-ba24-9b07f2f4eaae/deploy-status)](https://sightcall-qa.netlify.app/)
+[![codecov](https://codecov.io/gh/cmnemoi/sightcall-qa-app/graph/badge.svg?token=P8HRA82P4B)](https://codecov.io/gh/cmnemoi/sightcall-qa-app)
 
 Stack:
 
@@ -25,11 +26,9 @@ Stack:
 ## Installation
 
 ```bash
-# Clone the repository
 git clone git@github.com:cmnemoi/sightcall-qa-app.git
 cd sightcall-qa-app
-
-# Install dependencies
+cp .env.example .env
 yarn install
 ```
 

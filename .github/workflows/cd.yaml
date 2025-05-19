@@ -1,20 +1,21 @@
-name: Continous Delivery
+name: Continuous Delivery
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   release-please:
     name: Release Please
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
     steps:
       - uses: googleapis/release-please-action@v4
         with:
           release-type: node
           package-name: sightcall-qa-app
+          token: ${{ secrets.GITHUB_TOKEN }}  # Explicitly use GITHUB_TOKEN
