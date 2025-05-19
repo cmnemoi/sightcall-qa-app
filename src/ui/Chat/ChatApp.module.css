@@ -126,31 +126,55 @@
 }
 
 .chatFooter {
-  background: #f6f4fb;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 18px 0 14px 0;
-  border-bottom-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-  font-size: 1rem;
-  font-family: "Inter", Arial, sans-serif;
-  color: #6e6780;
-  box-shadow: 0 -2px 12px rgba(125, 62, 246, 0.04);
+  gap: 10px;
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+  background: #f9f9f9;
   position: sticky;
   bottom: 0;
-  z-index: 2;
+  z-index: 1;
   user-select: none;
+  flex-wrap: wrap;
 }
 .chatFooter a {
   color: #7d3ef6;
   text-decoration: none;
   font-weight: 600;
+}
+
+.githubLinks {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.githubLink {
   display: inline-flex;
   align-items: center;
-  transition: color 0.15s;
+  color: #7d3ef6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  font-size: 0.9rem;
+  height: 22px; /* Match the height of GitHub icons */
 }
+
+.copyright {
+  color: #6e6780;
+}
+
+.githubLink:hover {
+  color: #6a2ed1;
+  text-decoration: underline;
+}
+
 .chatFooter a:hover {
   color: #00e18a;
 }
